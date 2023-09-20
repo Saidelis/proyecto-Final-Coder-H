@@ -1,0 +1,52 @@
+@media screen and (min-width: 320px) {
+  main {
+    img {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .trimestres {
+      width: 700px;
+      position: relative;
+      overflow: hidden;
+      padding-top: 2%;
+      width: 100%;
+      margin-bottom: 1rem;
+      .trimestres iframe {
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    form {
+      padding: 30px;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  }
+  section {
+    @include alineacion-texto;
+    font-size: 1rem;
+    div {
+      text-decoration: none;
+      ul {
+        @include flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 1rem;
+      }
+      li {
+        align-items: center;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}

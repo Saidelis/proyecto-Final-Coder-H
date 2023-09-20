@@ -1,0 +1,14 @@
+@media screen and (min-width: 1024px) {
+  body {
+    align-items: center;
+  }
+  main {
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 340px;
+    }
+  }
+}
