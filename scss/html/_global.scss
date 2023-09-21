@@ -14,12 +14,12 @@ body {
   main {
     text-align: center;
     @extend %margenes-laterales;
-
+    @include flex(column, center, center);
     h1 {
       @include alineacion-texto;
     }
     h2 {
-      text-align: center;
+      @include alineacion-texto;
     }
     p {
       @include alineacion-texto;
@@ -112,23 +112,19 @@ section {
   }
 }
 form {
-  @include flex;
-  flex-direction: column;
-  align-content: center;
-  text-align: center;
+  @include flex(column, center, center);
   padding: 2rem 2.5rem;
   background-color: $color-principal;
   border-radius: 20px;
   box-shadow: 0 0 20px $color-secundario;
-  width: 340px;
+  max-width: 340px;
   margin-bottom: 1rem;
 
   h2 {
     font-size: 25px;
   }
   .form-txt {
-    display: flex;
-    justify-content: space-between;
+    @include flex(space-between);
   }
   a {
     color: $color-secundario;
@@ -167,7 +163,6 @@ form {
     }
   }
 }
-
 footer {
   background-color: $color-principal;
   @include flex;

@@ -21,6 +21,10 @@ body {
 }
 body main {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body main h1 {
   text-align: center;
@@ -28,6 +32,7 @@ body main h1 {
 }
 body main h2 {
   text-align: center;
+  padding: 1rem;
 }
 body main p {
   text-align: center;
@@ -81,7 +86,9 @@ section div {
 }
 section div ul {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   list-style: none;
   gap: 1rem;
@@ -152,15 +159,14 @@ section a {
 
 form {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-content: center;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   padding: 2rem 2.5rem;
   background-color: rgba(74, 8, 104, 0.8980392157);
   border-radius: 20px;
   box-shadow: 0 0 20px white;
-  width: 340px;
+  max-width: 340px;
   margin-bottom: 1rem;
 }
 form h2 {
@@ -168,7 +174,9 @@ form h2 {
 }
 form .form-txt {
   display: flex;
-  justify-content: space-between;
+  flex-direction: space-between;
+  justify-content: center;
+  align-items: center;
 }
 form a {
   color: white;
@@ -209,7 +217,9 @@ form .btn:hover {
 footer {
   background-color: rgba(74, 8, 104, 0.8980392157);
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   text-align: center;
   padding-top: 1rem;
   font-size: 1rem;
@@ -253,7 +263,9 @@ footer {
   }
   section div ul {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     list-style: none;
     gap: 1rem;
@@ -278,24 +290,14 @@ footer {
     width: 340px;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 768px) {
-  main {
+@media screen and (min-width: 768px) {
+  form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 340px;
+    justify-content: space-between;
+    padding: 3rem 2rem;
   }
-}
-form {
-  flex-direction: column;
-  align-content: center;
-  text-align: center;
-  padding: 1rem 2.5rem;
-  background-color: rgba(74, 8, 104, 0.8980392157);
-  border-radius: 20px;
-  box-shadow: 0 0 20px white;
-  width: 340px;
-  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

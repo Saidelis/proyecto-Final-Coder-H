@@ -4,10 +4,7 @@
   }
   main {
     form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include flex(column, center, center);
       width: 340px;
     }
   }
